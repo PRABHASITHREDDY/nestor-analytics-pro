@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Tabs with MVC Pattern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container ">
+        <div class="d-flex">
+            <div id="tabs-container">
+                <!-- Tabs will be dynamically added here -->
+            </div>
+            <div id="controls">
+                <button class="mar-left-top" id="add-tab-btn">+</button>
+            </div>
+        </div>
+        <div id="iframe-container">
+            <input type="text" id="url-input" placeholder="Enter URL and press Enter To Display the iframe">
+            <iframe id="iframe-content" src=""></iframe>
+        </div>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
