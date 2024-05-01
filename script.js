@@ -53,6 +53,10 @@ function setActiveTab(index) {
 }
 
 function closeTab(index) {
+    if(model.tabs.length === 1){
+        alert('Can\'t Close ALL Tabs');
+        return;
+    }
     model.tabs.splice(index, 1);
     if (model.tabs.length > 0) {
         setActiveTab(Math.min(index, model.tabs.length - 1));
